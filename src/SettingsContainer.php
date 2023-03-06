@@ -3,6 +3,7 @@
 namespace Spatie\LaravelSettings;
 
 use Illuminate\Container\Container;
+use Illuminate\Foundation\Application;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Log;
 use Spatie\LaravelSettings\Exceptions\CouldNotUnserializeSettings;
@@ -16,6 +17,8 @@ class SettingsContainer
 
     protected static ?Collection $settingsClasses = null;
 
+    public static int $versionMajor = 7;
+
     public function __construct(Container $container)
     {
         $this->container = $container;
@@ -26,7 +29,7 @@ class SettingsContainer
         $cacheFactory = $this->container->make(SettingsCacheFactory::class);
 
         $this->getSettingClasses()->each(function (string $settingClass) use ($cacheFactory) {
-            $this->container->scoped($settingClass, function () use ($cacheFactory, $settingClass) {
+            $callback = function () use ($cacheFactory, $settingClass) {
                 $cache = $cacheFactory->build($settingClass::repository());
 
                 if ($cache->isEnabled() && $cache->has($settingClass)) {
@@ -38,7 +41,13 @@ class SettingsContainer
                 }
 
                 return new $settingClass();
-            });
+            };
+
+            if (self::$versionMajor >= 8) {
+                $this->container->scoped($settingClass, $callback);
+            } else {
+                $this->container->singleton($settingClass, $callback);
+            }
         });
     }
 
@@ -81,3 +90,5 @@ class SettingsContainer
             ->discover();
     }
 }
+
+SettingsContainer::$versionMajor = explode('.', app()->version())[0];

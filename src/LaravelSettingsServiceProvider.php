@@ -57,7 +57,11 @@ class LaravelSettingsServiceProvider extends ServiceProvider
             config('settings'),
         ));
 
-        $this->app->scoped(SettingsMapper::class);
+        if (SettingsContainer::$versionMajor >= 8) {
+            $this->app->scoped(SettingsMapper::class);
+        } else {
+            $this->app->singleton(SettingsMapper::class);
+        }
 
         $settingsContainer = app(SettingsContainer::class);
         $settingsContainer->registerBindings();

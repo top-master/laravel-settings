@@ -1,0 +1,2215 @@
+
+  [37;41;1m FAIL [39;49;22m[39m Tests\Console\CacheDiscoveredSettingsCommandTest[39m
+  [31;1m⨯[39;22m[39m [2mit can cache the registered sessions[22m[39m
+
+  [37;41;1m FAIL [39;49;22m[39m Tests\Console\ClearDiscoveredSettingsCacheCommandTest[39m
+  [31;1m⨯[39;22m[39m [2mit can clear the registered settings[22m[39m
+
+  [37;41;1m FAIL [39;49;22m[39m Tests\Console\MakeSettingCommandTest[39m
+  [31;1m⨯[39;22m[39m [2mit creates a new test settings class on specified path[22m[39m
+
+  [37;41;1m FAIL [39;49;22m[39m Tests\Console\MakeSettingsMigrationCommandTest[39m
+  [31;1m⨯[39;22m[39m [2mit creates a new test settings migration on specified path[22m[39m
+
+  [37;41;1m FAIL [39;49;22m[39m Tests\DiscoversSettingsTest[39m
+  [31;1m⨯[39;22m[39m [2mit can get all classes that are settings[22m[39m
+
+  [37;41;1m FAIL [39;49;22m[39m Tests\Factories\SettingsCastFactoryTest[39m
+  [31;1m⨯[39;22m[39m [2mit will not resolve a cast for built in types[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can resolve a global cast[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can resolve a global cast as docblock[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can have no type and no cast[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can have a global cast with an array[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can have a global cast with an array without array type[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can have a plain array without cast[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can have a nullable cast[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can have a nullable docblock cast[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can create a local cast without arguments[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can create a local cast with class identifier and arguments[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can create a local cast with an already constructed cast[22m[39m
+  [31;1m⨯[39;22m[39m [2mit will not resolve a cast for a primitive type[22m[39m
+  [31;1m⨯[39;22m[39m [2mit will resolve an enum cast for native enums[22m[39m
+  [31;1m⨯[39;22m[39m [2mit will resolve imported annotated casts[22m[39m
+
+  [37;41;1m FAIL [39;49;22m[39m Tests\Factories\SettingsRepositoryFactoryTest[39m
+  [31;1m⨯[39;22m[39m [2mit can create the default repository[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can create a specific repository[22m[39m
+
+  [37;41;1m FAIL [39;49;22m[39m Tests\SettingsBlueprintTest[39m
+  [31;1m⨯[39;22m[39m [2mit can rename properties[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can add properties[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can delete properties[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can update properties[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can add a property encrypted[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can update an encrypted property[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can encrypt a setting[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can decrypt a setting[22m[39m
+
+  [37;41;1m FAIL [39;49;22m[39m Tests\SettingsContainerTest[39m
+  [31;1m⨯[39;22m[39m [2mit will not fetch data from the repository twice[22m[39m
+  [31;1m⨯[39;22m[39m [2mit wont fetch data from the repository when injected only[22m[39m
+  [31;1m⨯[39;22m[39m [2mit settings are shared between instances[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can refresh settings[22m[39m
+
+  [37;41;1m FAIL [39;49;22m[39m Tests\SettingsMigratorTest[39m
+  [31;1m⨯[39;22m[39m [2mit can add a setting[22m[39m
+  [31;1m⨯[39;22m[39m [2mit cannot add the same setting twice[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can add a setting with the same name in different groups[22m[39m
+  [31;1m⨯[39;22m[39m [2mit cannot provide a invalid name when creating a setting[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can rename a setting[22m[39m
+  [31;1m⨯[39;22m[39m [2mit cannot rename a property that does not exist[22m[39m
+  [31;1m⨯[39;22m[39m [2mit cannot rename a property to another existing property[22m[39m
+  [31;1m⨯[39;22m[39m [2mit cannot rename from an invalid property[22m[39m
+  [31;1m⨯[39;22m[39m [2mit cannot rename to an invalid property[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can delete a setting[22m[39m
+  [31;1m⨯[39;22m[39m [2mit cannot delete a setting that does not exist[22m[39m
+  [31;1m⨯[39;22m[39m [2mit cannot delete a setting with an invalid property[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can update a setting[22m[39m
+  [31;1m⨯[39;22m[39m [2mit cannot update a setting that does not exist[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can perform migrations within a group[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can add a setting encrypted[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can update an encrypted setting[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can encrypt a setting[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can decrypt a setting[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can cast on migration[22m[39m
+
+  [37;41;1m FAIL [39;49;22m[39m Tests\SettingsRepositories\DatabaseSettingsRepositoryTest[39m
+  [31;1m⨯[39;22m[39m [2mit can get the properties in a group[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can check if a property exists[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can get the property payload[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can create a property[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can update a property payload[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can delete a property[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can lock settings[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can unlock settings[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can get the locked properties[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can have different configuration options with (Closure Object (...)) #1[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can have different configuration options with (Closure Object (...)) #2[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can have a different table name[22m[39m
+
+  [37;41;1m FAIL [39;49;22m[39m Tests\SettingsRepositories\RedisSettingsRepositoryTest[39m
+  [31;1m⨯[39;22m[39m [2mit can get the properties in a group[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can check if a property exists[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can get the property payload[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can create a property[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can update a property payload[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can delete a property[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can lock settings[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can unlock settings[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can get the locked properties[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can use a prefix[22m[39m
+
+  [37;41;1m FAIL [39;49;22m[39m Tests\SettingsTest[39m
+  [31;1m⨯[39;22m[39m [2mit will handle loading settings correctly[22m[39m
+  [31;1m⨯[39;22m[39m [2mit will fail loading when settings are missing[22m[39m
+  [31;1m⨯[39;22m[39m [2mit cannot get settings that do not exist[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can save settings[22m[39m
+  [31;1m⨯[39;22m[39m [2mit cannot save settings that do not exist[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can fake settings[22m[39m
+  [31;1m⨯[39;22m[39m [2mit will only load settings from the repository that were not given[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can lock settings[22m[39m
+  [31;1m⨯[39;22m[39m [2mit locking and unlocking settings can be done between saves[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can fill settings[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can save individual settings[22m[39m
+  [31;1m⨯[39;22m[39m [2mit will emit an event when loading settings[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can overload the properties when loading[22m[39m
+  [31;1m⨯[39;22m[39m [2mit will emit an event when loaded settings[22m[39m
+  [31;1m⨯[39;22m[39m [2mit will emit an event when saving settings[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can update the properties in an event when saving[22m[39m
+  [31;1m⨯[39;22m[39m [2mit will emit an event when saved settings[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can encrypt settings[22m[39m
+  [31;1m⨯[39;22m[39m [2mit will remigrate when the schema was dumped[22m[39m
+  [31;1m⨯[39;22m[39m [2mit will not contact the repository when loading cached settings[22m[39m
+  [31;1m⨯[39;22m[39m [2mit will cache encrypted setting[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can clear a settings cache[22m[39m
+  [31;1m⨯[39;22m[39m [2mit will load settings from the repository when a serialized setting cannot be loaded[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can serialize settings[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can update unserialized settings[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can change the locks on unserialized settings[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can refresh the settings properties[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can refresh the settings locks[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can check if a setting is locked or unlocked[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can check if a property has been set if properties are not loaded[22m[39m
+  [31;1m⨯[39;22m[39m [2mit has support for native enums[22m[39m
+  [31;1m⨯[39;22m[39m [2mit supports complex types with casts when caching Settings[22m[39m
+  [31;1m⨯[39;22m[39m [2mit will use specific repository cache settings when supplied[22m[39m
+
+  [37;41;1m FAIL [39;49;22m[39m Tests\Support\PropertyReflectorTest[39m
+  [31;1m⨯[39;22m[39m [2mit wont reflect non typed properties[22m[39m
+  [31;1m⨯[39;22m[39m [2mit wont reflect build in typed properties[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can reflect property types[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can reflect docblock types[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can reflect arrays[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can reflect arrays with different types[22m[39m
+  [31;1m⨯[39;22m[39m [2mit crashes when using a non sensible array type[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can handle a nullable type[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can handle a nullable docblock type[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can handle a compound nullable[22m[39m
+  [31;1m⨯[39;22m[39m [2mit can handle an imported type[22m[39m
+
+  [37;41;1m FAIL [39;49;22m[39m Tests\Support\SettingsCacheFactoryTest[39m
+  [31;1m⨯[39;22m[39m [2mit can get all caches[22m[39m
+
+  [2m---[22m
+
+  [31;1m• Tests\Console\CacheDiscoveredSettingsCommandTest [39;22m> [31;1mit can cache the registered sessions[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Console\ClearDiscoveredSettingsCacheCommandTest [39;22m> [31;1mit can clear the registered settings[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Console\MakeSettingCommandTest [39;22m> [31;1mit creates a new test settings class on specified path[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Console\MakeSettingsMigrationCommandTest [39;22m> [31;1mit creates a new test settings migration on specified path[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\DiscoversSettingsTest [39;22m> [31;1mit can get all classes that are settings[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Factories\SettingsCastFactoryTest [39;22m> [31;1mit will not resolve a cast for built in types[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Factories\SettingsCastFactoryTest [39;22m> [31;1mit can resolve a global cast[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Factories\SettingsCastFactoryTest [39;22m> [31;1mit can resolve a global cast as docblock[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Factories\SettingsCastFactoryTest [39;22m> [31;1mit can have no type and no cast[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Factories\SettingsCastFactoryTest [39;22m> [31;1mit can have a global cast with an array[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Factories\SettingsCastFactoryTest [39;22m> [31;1mit can have a global cast with an array without array type[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Factories\SettingsCastFactoryTest [39;22m> [31;1mit can have a plain array without cast[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Factories\SettingsCastFactoryTest [39;22m> [31;1mit can have a nullable cast[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Factories\SettingsCastFactoryTest [39;22m> [31;1mit can have a nullable docblock cast[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Factories\SettingsCastFactoryTest [39;22m> [31;1mit can create a local cast without arguments[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Factories\SettingsCastFactoryTest [39;22m> [31;1mit can create a local cast with class identifier and arguments[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Factories\SettingsCastFactoryTest [39;22m> [31;1mit can create a local cast with an already constructed cast[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Factories\SettingsCastFactoryTest [39;22m> [31;1mit will not resolve a cast for a primitive type[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Factories\SettingsCastFactoryTest [39;22m> [31;1mit will resolve an enum cast for native enums[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Factories\SettingsCastFactoryTest [39;22m> [31;1mit will resolve imported annotated casts[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Factories\SettingsRepositoryFactoryTest [39;22m> [31;1mit can create the default repository[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Factories\SettingsRepositoryFactoryTest [39;22m> [31;1mit can create a specific repository[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsBlueprintTest [39;22m> [31;1mit can rename properties[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsBlueprintTest [39;22m> [31;1mit can add properties[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsBlueprintTest [39;22m> [31;1mit can delete properties[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsBlueprintTest [39;22m> [31;1mit can update properties[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsBlueprintTest [39;22m> [31;1mit can add a property encrypted[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsBlueprintTest [39;22m> [31;1mit can update an encrypted property[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsBlueprintTest [39;22m> [31;1mit can encrypt a setting[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsBlueprintTest [39;22m> [31;1mit can decrypt a setting[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsContainerTest [39;22m> [31;1mit will not fetch data from the repository twice[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsContainerTest [39;22m> [31;1mit wont fetch data from the repository when injected only[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsContainerTest [39;22m> [31;1mit settings are shared between instances[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsContainerTest [39;22m> [31;1mit can refresh settings[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsMigratorTest [39;22m> [31;1mit can add a setting[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsMigratorTest [39;22m> [31;1mit cannot add the same setting twice[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsMigratorTest [39;22m> [31;1mit can add a setting with the same name in different groups[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsMigratorTest [39;22m> [31;1mit cannot provide a invalid name when creating a setting[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsMigratorTest [39;22m> [31;1mit can rename a setting[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsMigratorTest [39;22m> [31;1mit cannot rename a property that does not exist[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsMigratorTest [39;22m> [31;1mit cannot rename a property to another existing property[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsMigratorTest [39;22m> [31;1mit cannot rename from an invalid property[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsMigratorTest [39;22m> [31;1mit cannot rename to an invalid property[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsMigratorTest [39;22m> [31;1mit can delete a setting[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsMigratorTest [39;22m> [31;1mit cannot delete a setting that does not exist[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsMigratorTest [39;22m> [31;1mit cannot delete a setting with an invalid property[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsMigratorTest [39;22m> [31;1mit can update a setting[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsMigratorTest [39;22m> [31;1mit cannot update a setting that does not exist[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsMigratorTest [39;22m> [31;1mit can perform migrations within a group[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsMigratorTest [39;22m> [31;1mit can add a setting encrypted[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsMigratorTest [39;22m> [31;1mit can update an encrypted setting[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsMigratorTest [39;22m> [31;1mit can encrypt a setting[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsMigratorTest [39;22m> [31;1mit can decrypt a setting[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsMigratorTest [39;22m> [31;1mit can cast on migration[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsRepositories\DatabaseSettingsRepositoryTest [39;22m> [31;1mit can get the properties in a group[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsRepositories\DatabaseSettingsRepositoryTest [39;22m> [31;1mit can check if a property exists[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsRepositories\DatabaseSettingsRepositoryTest [39;22m> [31;1mit can get the property payload[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsRepositories\DatabaseSettingsRepositoryTest [39;22m> [31;1mit can create a property[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsRepositories\DatabaseSettingsRepositoryTest [39;22m> [31;1mit can update a property payload[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsRepositories\DatabaseSettingsRepositoryTest [39;22m> [31;1mit can delete a property[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsRepositories\DatabaseSettingsRepositoryTest [39;22m> [31;1mit can lock settings[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsRepositories\DatabaseSettingsRepositoryTest [39;22m> [31;1mit can unlock settings[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsRepositories\DatabaseSettingsRepositoryTest [39;22m> [31;1mit can get the locked properties[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsRepositories\DatabaseSettingsRepositoryTest [39;22m> [31;1mit can have different configuration options with (Closure Object (...)) #1[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsRepositories\DatabaseSettingsRepositoryTest [39;22m> [31;1mit can have different configuration options with (Closure Object (...)) #2[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsRepositories\DatabaseSettingsRepositoryTest [39;22m> [31;1mit can have a different table name[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsRepositories\RedisSettingsRepositoryTest [39;22m> [31;1mit can get the properties in a group[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsRepositories\RedisSettingsRepositoryTest [39;22m> [31;1mit can check if a property exists[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsRepositories\RedisSettingsRepositoryTest [39;22m> [31;1mit can get the property payload[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsRepositories\RedisSettingsRepositoryTest [39;22m> [31;1mit can create a property[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsRepositories\RedisSettingsRepositoryTest [39;22m> [31;1mit can update a property payload[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsRepositories\RedisSettingsRepositoryTest [39;22m> [31;1mit can delete a property[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsRepositories\RedisSettingsRepositoryTest [39;22m> [31;1mit can lock settings[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsRepositories\RedisSettingsRepositoryTest [39;22m> [31;1mit can unlock settings[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsRepositories\RedisSettingsRepositoryTest [39;22m> [31;1mit can get the locked properties[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsRepositories\RedisSettingsRepositoryTest [39;22m> [31;1mit can use a prefix[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit will handle loading settings correctly[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit will fail loading when settings are missing[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit cannot get settings that do not exist[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit can save settings[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit cannot save settings that do not exist[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit can fake settings[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit will only load settings from the repository that were not given[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit can lock settings[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit locking and unlocking settings can be done between saves[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit can fill settings[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit can save individual settings[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit will emit an event when loading settings[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit can overload the properties when loading[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit will emit an event when loaded settings[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit will emit an event when saving settings[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit can update the properties in an event when saving[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit will emit an event when saved settings[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit can encrypt settings[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit will remigrate when the schema was dumped[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit will not contact the repository when loading cached settings[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit will cache encrypted setting[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit can clear a settings cache[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit will load settings from the repository when a serialized setting cannot be loaded[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit can serialize settings[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit can update unserialized settings[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit can change the locks on unserialized settings[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit can refresh the settings properties[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit can refresh the settings locks[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit can check if a setting is locked or unlocked[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit can check if a property has been set if properties are not loaded[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit has support for native enums[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit supports complex types with casts when caching Settings[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\SettingsTest [39;22m> [31;1mit will use specific repository cache settings when supplied[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Support\PropertyReflectorTest [39;22m> [31;1mit wont reflect non typed properties[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Support\PropertyReflectorTest [39;22m> [31;1mit wont reflect build in typed properties[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Support\PropertyReflectorTest [39;22m> [31;1mit can reflect property types[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Support\PropertyReflectorTest [39;22m> [31;1mit can reflect docblock types[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Support\PropertyReflectorTest [39;22m> [31;1mit can reflect arrays[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Support\PropertyReflectorTest [39;22m> [31;1mit can reflect arrays with different types[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Support\PropertyReflectorTest [39;22m> [31;1mit crashes when using a non sensible array type[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Support\PropertyReflectorTest [39;22m> [31;1mit can handle a nullable type[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Support\PropertyReflectorTest [39;22m> [31;1mit can handle a nullable docblock type[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Support\PropertyReflectorTest [39;22m> [31;1mit can handle a compound nullable[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Support\PropertyReflectorTest [39;22m> [31;1mit can handle an imported type[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+  [31;1m• Tests\Support\SettingsCacheFactoryTest [39;22m> [31;1mit can get all caches[39;22m
+  [41;1m PHPUnit\Framework\ExceptionWrapper [49;22m
+
+[39;1m  syntax error, unexpected '=>' (T_DOUBLE_ARROW)[39;22m
+
+  at [32mC:\xampp742\htdocs\xkalq-web\vendor\spatie\laravel-settings\vendor\spatie\laravel-data\src\LaravelDataServiceProvider.php[39m:[32m45[39m
+     41▕ 
+     42▕     public function packageBooted()
+     43▕     {
+     44▕         $enableVarDumperCaster = match (config('data.var_dumper_caster_mode')) {
+  ➜  45▕             'enabled' => true,
+     46▕             'development' => $this->app->environment('local', 'testing'),
+     47▕             default => false,
+     48▕         };
+     49▕
+
+
+
+  [37;1mTests:  [39;22m[31;1m121 failed[39;22m
+  [37;1mTime:   [39;22m[39m6.52s[39m
+
